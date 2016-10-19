@@ -1,0 +1,17 @@
+{
+  "name": "lib",
+  "description": "Modern JS QUiz",
+  "main": "index.js",
+  "authors": [
+    "Tommy Waters"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nss-evening-cohort-04/modernjs-quiz-Thomaswaters05",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
