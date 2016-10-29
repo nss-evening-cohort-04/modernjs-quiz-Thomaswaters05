@@ -8,41 +8,106 @@
 </head>
 <body>
 
+
+<!-- CREATES FIRST PLAYER -->
+<div id="firstPlayer">
+    <label>Enter Team:</label>
+    <input type="text" autofocus="true" id="player-name" class="field__textinput">
+
+    <label>Select Player 1 Position:</label>
+    <select id="player1_positon">
+      <option value="None">Select Position</option>
+      <option class="class_selected" value="Quarterback">Quarterback</option>
+      <option class="class_selected"  value="Runningback">Runningback</option>
+      <option class="class_selected"  value="Widereciever">Widereciever</option>
+      <option class="class_selected"  value="LineBacker">Linebacker</option>
+      <option class="class_selected"  value="Corner">Corner</option>
+      <option class="class_selected"  value="Kicker">Kicker</option>
+
+    </select>
+    <label>Select Attack:</label>
+      <select id="player1_weapon">
+      <option value="None">Select Attack</option>
+      <option class="weapon_selected"  value="StiffArm">Heisman Stiff-Arm</option>
+      <option class="weapon_selected"  value="Tackle">Brutal Tackle</option>
+      <option class="weapon_selected"  value="SpinJuke">Spin Juke EM'</option>
+
+    </select>
+
+<!-- CREATES FIRST PLAYER -->
+
+<!-- CREATES SECOND PLAYER -->
+<div id="secondPlayer">
+    <label>Enter Team:</label>
+    <input type="text" autofocus="true" id="player-name" class="field__textinput">
+
+    <label>Select Player 2 Position:</label>
+    <select id="player2_position">
+      <option value="None">Select Position</option>
+      <option class="class_selected"  value="Quarterback">Quarterback</option>
+      <option class="class_selected"  value="Runningback">Runningback</option>
+      <option class="class_selected"  value="Widereciever">Widereciever</option>
+      <option class="class_selected"  value="LineBacker">Linebacker</option>
+      <option class="class_selected"  value="Corner">Corner</option>
+      <option class="class_selected"  value="Kicker">Kicker</option>
+
+    </select>
+     <label>Select Attack:</label>
+      <select id="player1_weapon">
+      <option value="None">Select Attack</option>
+      <option class="weapon_selected" value="StiffArm">Heisman Stiff-Arm</option>
+      <option class="weapon_selected" value="Tackle">Brutal Tackle</option>
+      <option class="weapon_selected" value="SpinJuke">Spin Juke EM'</option>
+
+    </select>
+
+<!-- CREATES SECOND PLAYER -->
+
+
 <!-- Battle ground logic here -->
-    <div class="card__prompt">
-      <h1>Battle your Opponent!!</h1>
+<div class="card__prompt">
+  <h1>Battle your Opponent!!
+  </h1>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <!-- <img src="img/titans2.png" class="battleground--image"> -->
+  </div>
+  <div class="col-md-6">
+<!--     <img src="img/jax2.jpg" class="battleground--image" id="jax2"> -->
+  </div>
+</div>
+<div class="row padding--top">
+  <div class="col-md-3">
+    <div class="stats player">
+      <span id="playerHp">
+      </span>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <img src="img/titans2.png" class="battleground--image">
-      </div>
-      <div class="col-md-6">
-        <img src="img/jax2.jpg" class="battleground--image" id="jax2">
-      </div>
+  </div>
+  <div class="col-md-4 col-md-offset-1">
+    <div class="mid-player-stats">
+      <span id="combat">
+      </span>
     </div>
-    <div class="row padding--top">
-      <div class="col-md-3">
-          <div class="stats player" id="playerHp">
-            <span></span>
-          </div>
-      </div>
-      <div class="col-md-4 col-md-offset-1">
-          <div class="mid-player-stats">
-            <span id="combat"></span>
-          </div>
-      </div>
-      <div class="col-md-3 col-md-offset-1">
-          <div class="stats player">
-            <span id="enemyHp"></span>
-          </div>
-      </div>
+  </div>
+  <div class="col-md-3 col-md-offset-1">
+    <div class="stats player">
+      <span id="enemyHp">
+      </span>
     </div>
+  </div>
+</div>
+
+<!-- Battle ground logic here -->
+
 
 
 <!-- Attack Button-->
 <div class="wrapper">
-  <button type="button" class="btn btn-primary btn-lg" >Attack!</button>
+  <button id="attack_button" type="button" class="btn btn-primary btn-lg" >Attack!</button>
 </div>
+<!-- Attack Button-->
+
 
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
