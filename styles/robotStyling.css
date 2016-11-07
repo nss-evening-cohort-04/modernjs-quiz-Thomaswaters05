@@ -1,0 +1,63 @@
+body {
+  background: skyblue;
+}
+
+.battleground--image {
+  width: 20%;
+  height: 20%;
+  margin: 2em;
+}
+
+#jax2 {
+  float: left;
+}
+
+.stats {
+  border-radius: 25px;
+  background-color: white;
+  text-align: center;
+  border: 10px solid black;
+  width: 90%;
+  height: 200px;
+  font-size: 1em;
+  overflow: auto;
+}
+
+#playerHp{
+  margin-left : 5em;
+}
+
+#enemyHp{
+  margin-right: 5em;
+}
+
+.mid-player-stats{
+  border-radius: 25px;
+  background-color: white;
+  text-align: center;
+  border: 10px solid black;
+  width: 100%;
+  height: 200px;
+  font-size: 1em;
+  overflow: auto;
+}
+
+.stat__font {
+  font-size: .75em;
+  padding: .35em;
+}
+
+#stat__name {
+  border-bottom: 4px solid pink;
+}
+
+.wrapper {
+    text-align: center;
+    margin: 3em;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+
